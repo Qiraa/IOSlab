@@ -17,6 +17,7 @@
 		435DC2F42B0A626A00B3710F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 435DC2F32B0A626A00B3710F /* Localizable.xcstrings */; };
 		435DC2F62B0A641000B3710F /* DoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F52B0A641000B3710F /* DoctorCard.swift */; };
 		435DC2F82B0A66F500B3710F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F72B0A66F500B3710F /* AppColors.swift */; };
+		435DC2FA2B0A6C8F00B3710F /* SearchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F92B0A6C8F00B3710F /* SearchCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		435DC2F32B0A626A00B3710F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		435DC2F52B0A641000B3710F /* DoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCard.swift; sourceTree = "<group>"; };
 		435DC2F72B0A66F500B3710F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		435DC2F92B0A6C8F00B3710F /* SearchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				435DC2C72B09108600B3710F /* LabApp.swift */,
 				435DC2C92B09108600B3710F /* ContentView.swift */,
+				435DC2F92B0A6C8F00B3710F /* SearchCard.swift */,
 				435DC2CB2B09108700B3710F /* Assets.xcassets */,
 				435DC2CD2B09108700B3710F /* Preview Content */,
 				435DC2F52B0A641000B3710F /* DoctorCard.swift */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				435DC2CA2B09108600B3710F /* ContentView.swift in Sources */,
+				435DC2FA2B0A6C8F00B3710F /* SearchCard.swift in Sources */,
 				435DC2F82B0A66F500B3710F /* AppColors.swift in Sources */,
 				435DC2F62B0A641000B3710F /* DoctorCard.swift in Sources */,
 				435DC2C82B09108600B3710F /* LabApp.swift in Sources */,

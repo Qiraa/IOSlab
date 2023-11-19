@@ -66,6 +66,17 @@
           }
         }
       }
+    },
+    "SearchHint" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search doctor or health issue"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

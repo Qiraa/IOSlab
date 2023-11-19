@@ -7,7 +7,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(LocalizedStringResource(stringLiteral: "Hello"))
                         .font(.system(size: 16))
-                        .foregroundStyle(.gray)
+                        .foregroundStyle(AppColors.gray)
                     Text(LocalizedStringResource(stringLiteral: "Hi James"))
                         .font(.system(size: 20))
                         .bold()
@@ -16,6 +16,9 @@ struct ContentView: View {
                 Image("LogoIcon")
             }
             DoctorCard()
+            Spacer()
+                .frame(height: 20)
+            SearchCard()
             Spacer()
         }
         .padding()

@@ -40,7 +40,7 @@ struct DoctorCard: View {
             maxWidth: .infinity,
             alignment: .topLeading
         )
-        .background(Color(red: 0.28, green: 0.58, blue: 1))
+        .background(AppColors.blue)
         .cornerRadius(12)
     }
 }
