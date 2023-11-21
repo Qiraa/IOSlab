@@ -18,6 +18,8 @@
 		435DC2F62B0A641000B3710F /* DoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F52B0A641000B3710F /* DoctorCard.swift */; };
 		435DC2F82B0A66F500B3710F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F72B0A66F500B3710F /* AppColors.swift */; };
 		435DC2FA2B0A6C8F00B3710F /* SearchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DC2F92B0A6C8F00B3710F /* SearchCard.swift */; };
+		43C809382B0BBEA700C1E3D9 /* ShortcutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C809372B0BBEA700C1E3D9 /* ShortcutList.swift */; };
+		43C8093A2B0BCB2600C1E3D9 /* NearDoctorsCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C809392B0BCB2600C1E3D9 /* NearDoctorsCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		435DC2F52B0A641000B3710F /* DoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCard.swift; sourceTree = "<group>"; };
 		435DC2F72B0A66F500B3710F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		435DC2F92B0A6C8F00B3710F /* SearchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCard.swift; sourceTree = "<group>"; };
+		43C809372B0BBEA700C1E3D9 /* ShortcutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutList.swift; sourceTree = "<group>"; };
+		43C809392B0BCB2600C1E3D9 /* NearDoctorsCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorsCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				435DC2CD2B09108700B3710F /* Preview Content */,
 				435DC2F52B0A641000B3710F /* DoctorCard.swift */,
 				435DC2F72B0A66F500B3710F /* AppColors.swift */,
+				43C809372B0BBEA700C1E3D9 /* ShortcutList.swift */,
+				43C809392B0BCB2600C1E3D9 /* NearDoctorsCards.swift */,
 			);
 			path = Lab;
 			sourceTree = "<group>";
@@ -270,11 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C8093A2B0BCB2600C1E3D9 /* NearDoctorsCards.swift in Sources */,
 				435DC2CA2B09108600B3710F /* ContentView.swift in Sources */,
 				435DC2FA2B0A6C8F00B3710F /* SearchCard.swift in Sources */,
 				435DC2F82B0A66F500B3710F /* AppColors.swift in Sources */,
 				435DC2F62B0A641000B3710F /* DoctorCard.swift in Sources */,
 				435DC2C82B09108600B3710F /* LabApp.swift in Sources */,
+				43C809382B0BBEA700C1E3D9 /* ShortcutList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
