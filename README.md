@@ -9,4 +9,4 @@ How to launch
 - Open app and run the project on selected device or simulator
 
 # Screenshots
-<img src="Lab/Screenshots/Simulator Screenshot - iPhone 15 Pro - 2023-11-23 at 00.20.50.png" width="400" alt="screenshot 1"/><img src="Lab/Screenshots/Simulator Screenshot - iPhone 15 Pro - 2023-11-23 at 00.21.05.png"/>
+<img Lab="/Screenshots/Simulator Screenshot - iPhone 15 Pro - 2023-11-23 at 00.20.50.png" width="400" alt="screenshot 1"/><img src="Lab/Screenshots/Simulator Screenshot - iPhone 15 Pro - 2023-11-23 at 00.21.05.png"/>
