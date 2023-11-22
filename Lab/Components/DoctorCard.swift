@@ -3,18 +3,18 @@ import SwiftUI
 
 struct DoctorCard: View {
     var body: some View {
-        VStack(spacing: 16) {
-            HStack(spacing: 12) {
+        VStack(spacing: AppDimensions.m) {
+            HStack(spacing: AppDimensions.s) {
                 Image("DoctorImage")
                     .background(.white)
                     .clipShape(.circle)
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading, spacing: AppDimensions.xs) {
                     Text(LocalizedStringResource(stringLiteral: "Dr. Imran Syahir"))
-                        .font(.system(size: 16))
+                        .font(.custom("Poppins-Bold", size: AppDimensions.m))
                         .bold()
                         .foregroundStyle(.white)
                     Text(LocalizedStringResource(stringLiteral: "General Doctor"))
-                        .font(.system(size: 14))
+                        .font(.custom("Poppins-Regular", size: AppDimensions.s))
                         .foregroundStyle(AppColors.lightBlue)
                 }
                 Spacer()
@@ -25,23 +25,23 @@ struct DoctorCard: View {
             HStack {
                 Image("CalendarIcon")
                 Text(LocalizedStringResource(stringLiteral: "DoctorDate"))
-                    .font(.system(size: 12))
+                    .font(.custom("Poppins-Regular", size: AppDimensions.s))
                     .foregroundStyle(.white)
                 Spacer()
                 Image("ClockIcon")
                 Text(LocalizedStringResource(stringLiteral: "DoctorTime"))
-                    .font(.system(size: 12))
+                    .font(.custom("Poppins-Regular", size: AppDimensions.s))
                     .foregroundStyle(.white)
             }
         }
-        .padding(20)
+        .padding(AppDimensions.l)
         .frame(
             minWidth: 0,
             maxWidth: .infinity,
             alignment: .topLeading
         )
         .background(AppColors.blue)
-        .cornerRadius(12)
+        .cornerRadius(AppDimensions.s)
     }
 }
 

@@ -1,15 +1,8 @@
-//
-//  DoctorsCards.swift
-//  Lab
-//
-//  Created by Daniil Bugay on 20.11.2023.
-//
-
 import SwiftUI
 
 struct NearDoctorsCards: View {
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: AppDimensions.s) {
             NearDoctorCard(
                 doctorPhoto: "Doctor1",
                 doctorName: "FirstName",
@@ -41,50 +34,50 @@ private struct NearDoctorCard: View {
     
     var body: some View {
         ZStack {
-            VStack(alignment: .leading, spacing: 20) {
-                HStack(spacing: 16) {
+            VStack(alignment: .leading, spacing: AppDimensions.l) {
+                HStack(spacing: AppDimensions.m) {
                     Image(doctorPhoto)
                         .background(.white)
                         .clipShape(.circle)
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: AppDimensions.xs) {
                         Text(LocalizedStringResource(stringLiteral: doctorName))
-                            .font(.system(size: 16))
+                            .font(.custom("Poppins-Bold", size: AppDimensions.m))
                             .bold()
                             .foregroundStyle(.black)
                         Text(LocalizedStringResource(stringLiteral: doctorSpecialization))
-                            .font(.system(size: 14))
+                            .font(.custom("Poppins-Regular", size: AppDimensions.s))
                             .foregroundStyle(AppColors.lightBlue)
                     }
                     Spacer()
                     HStack() {
                         Image("LocationIcon")
                         Text(LocalizedStringResource(stringLiteral: distance))
-                            .font(.system(size: 14))
+                            .font(.custom("Poppins-Regular", size: AppDimensions.s))
                             .foregroundStyle(.gray)
                     }
                 }
                 Divider()
-                    .background(AppColors.gray)
+                    .background(AppColors.lightGray)
                 HStack {
                     Image("YellowClockIcon")
                     Spacer()
-                        .frame(width: 6)
+                        .frame(width: AppDimensions.xxs)
                     Text(LocalizedStringResource(stringLiteral: review))
-                        .font(.system(size: 12))
+                        .font(.custom("Poppins-Regular", size: AppDimensions.s))
                         .foregroundStyle(AppColors.yellow)
                     Spacer()
-                        .frame(width: 24)
+                        .frame(width: AppDimensions.xl)
                     Image("BlueClockIcon")
                     Spacer()
-                        .frame(width: 6)
+                        .frame(width: AppDimensions.xxs)
                     Text(LocalizedStringResource(stringLiteral: workingTime))
-                        .font(.system(size: 12))
+                        .font(.custom("Poppins-Regular", size: AppDimensions.s))
                         .foregroundStyle(.blue)
                 }
-                .padding(.horizontal, 4)
+                .padding(.horizontal, AppDimensions.xxs)
             }
-            .padding(.horizontal, 24)
-            .padding(.vertical, 20)
+            .padding(.horizontal, AppDimensions.xl)
+            .padding(.vertical, AppDimensions.l)
         }
         .frame(
             minWidth: 0,
@@ -92,7 +85,7 @@ private struct NearDoctorCard: View {
             alignment: .topLeading
         )
         .background(.white)
-        .cornerRadius(24)
+        .cornerRadius(AppDimensions.xl)
         .shadow(color: .gray.opacity(0.1), radius: 5)
     }
 }

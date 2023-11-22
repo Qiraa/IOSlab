@@ -1,16 +1,9 @@
-//
-//  Shortcut.swift
-//  Lab
-//
-//  Created by Daniil Bugay on 20.11.2023.
-//
-
 import SwiftUI
 
 struct ShortcutList: View {
     var body: some View {
-        VStack(spacing: 8) {
-            HStack(spacing: 13) {
+        VStack(spacing: AppDimensions.xs) {
+            HStack(spacing: AppDimensions.s) {
                 ShortcutItem(
                     imageName: "CovidIcon",
                     stringLiteral: "Covid 19"
@@ -43,13 +36,13 @@ private struct ShortcutItem: View {
     let stringLiteral: String
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: AppDimensions.xs) {
             Image(imageName)
-                .padding(24)
-                .background(AppColors.gray)
+                .padding(AppDimensions.xl)
+                .background(AppColors.lightGray)
                 .clipShape(.circle)
             Text(LocalizedStringResource(stringLiteral: stringLiteral))
-                .font(.system(size: 16))
+                .font(.custom("Poppins-Regular", size: AppDimensions.m))
                 .foregroundStyle(.gray)
         }
     }
